@@ -843,6 +843,36 @@
 
             </div>
         </div>
+		<div class="card">
+			<div class="card-content">
+				<div class="card-content article-card-content"> 
+					<div class="title center-align" data-aos="zoom-in-up"> 
+						<i class="fa fa-address-book"></i>&nbsp;&nbsp;myCV 
+					</div> 
+					<div id="articleContent" data-aos="fade-up">
+						<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script> 
+					</div>
+				</div> 
+			</div> 
+		</div>
     </div>
 </main>
 
@@ -859,7 +889,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">125</span>&nbsp;字
+                class="white-color">132</span>&nbsp;字
             
             
             
